@@ -84,8 +84,8 @@ if __name__ == '__main__':
     simle_path = r'E:\b站视频\搞笑'
     seedfood_path = r'E:\b站视频\海鲜'
 
-    f_pn = 3
-    l_pn = 5
+    f_pn = 6
+    l_pn = 7
 
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.168 Safari/537.36',
@@ -101,12 +101,13 @@ if __name__ == '__main__':
     #影视剪辑
     url_movie = 'https://api.bilibili.com/x/tag/ranking/archives?callback=jQuery17209140340510768037_1522635041067&tag_id=105624&rid=183&type=0&pn=%r&ps=20&jsonp=jsonp&_=1522635058905'
     #美食圈
-    url_food = 'https://api.bilibili.com/x/web-interface/newlist?callback=jQuery172029422949515626273_1522380074806&rid=76&type=0&pn=%d&ps=20&jsonp=jsonp&_=1522380075833'
+    #url_food = 'https://api.bilibili.com/x/web-interface/newlist?callback=jQuery172029422949515626273_1522380074806&rid=76&type=0&pn=%d&ps=20&jsonp=jsonp&_=1522380075833'
     #搞笑
     url_smile = 'https://api.bilibili.com/x/web-interface/newlist?callback=jQuery17204101817794147882_1522641748126&rid=138&type=0&pn=%d&ps=20&jsonp=jsonp&_=1522641748640'
     #海鲜
     url_seedfood = u'https://search.bilibili.com/api/search?search_type=video&keyword=海鲜&from_source=banner_search&order=totalrank&duration=1&tids=0&page=%d'
-
+    #美食搜索
+    url_food = u'https://search.bilibili.com/api/search?search_type=video&keyword=美食&from_source=banner_search&order=totalrank&duration=1&tids=0&page=%d'
     # b = GetBlibliVideos(url_movie, headers, movie_path, pn)
     # b = GetBlibliVideos(url_food, headers, food_path, pn)
     # b = GetBlibliVideos(url_smile, headers, simle_path, pn)
